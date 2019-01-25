@@ -22,6 +22,30 @@
   color: #61dafb;
 }
 
+#navbar {
+  padding: 1vh 10vw 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(126, 140, 153, 0.075)
+}
+
+.nav-link {
+  transition: all .5s ease;
+}
+
+.navbar-right {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;
+}
+
+.nav-active {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

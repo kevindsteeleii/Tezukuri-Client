@@ -1,3 +1,4 @@
+@import url('./index.css');
 .App {
   text-align: center;
 }
@@ -23,14 +24,16 @@
 }
 
 #navbar {
-  padding: 1vh 10vw 0;
+  padding: 1vh 10vw .5vh;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(126, 140, 153, 0.075)
+  background-color: rgba(126, 140, 153, 0.075);
 }
 
 .nav-link {
-  transition: all .5s ease;
+  /* color:  */
+  transition: visibility .5s ease;
+  transition: color .2s ease-out;
 }
 
 .navbar-right {
@@ -44,7 +47,9 @@
   opacity: 0;
 }
 
-
+button:disabled {
+  opacity: 0.3;
+}
 
 @keyframes App-logo-spin {
   from {

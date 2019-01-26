@@ -1,0 +1,6 @@
+#signForm {
+  margin: 0 auto;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,7 +1,8 @@
 import { LOGIN, LOGOFF, SIGNUP, DEMO } from '../_actions/types';
 const initialState = {
   demoLoggedIn: false,
-  user: {}
+  user: {},
+  pathname: ''
 }
 
 const baseReducer = (state = initialState, { type, payload}) => {

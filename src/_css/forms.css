@@ -3,4 +3,17 @@
   width: 40vw;
   display: flex;
   flex-direction: column;
+  position: relative;
+  bottom: 50vh;
+}
+
+button.submit {
+  background-color: white;
+  transition: all .3s ease;
+}
+
+button.submit:hover {
+  background-color: rgb(34, 33, 33);
+  font-weight: bold;
+  color: white;
 }

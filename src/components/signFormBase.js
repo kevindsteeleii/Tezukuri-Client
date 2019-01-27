@@ -30,7 +30,7 @@ export default class SignFormBase extends Component {
         <input className="navy" onChange={this.handleChange} placeholder="username" value={username} type="text" name="username" maxLength="30"/>
         <input className="navy" onChange={this.handleChange} placeholder="email" hidden={location.pathname === '/login'} value={email} type="email" name="email" maxLength="30"/>
         <input className="navy" onChange={this.handleChange} placeholder="password" value={password} type="password" name="password" maxLength="30"/>
-        <button type="submit">Submit</button>
+        <button className="submit" type="submit">Submit</button>
       </form>
     )
   }

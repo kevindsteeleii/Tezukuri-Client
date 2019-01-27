@@ -58,6 +58,7 @@
 .border--gray { border-color: #AAAAAA; }
 .border--silver { border-color: #DDDDDD; }
 .border--black { border-color: #111111; }
+.border--transparent { border-color: transparent; }
 /* Fills for SVG */
 .fill-navy { fill: #001F3F; }
 .fill-blue { fill: #0074D9; }

@@ -1,5 +1,6 @@
 @import url('./normalize.css');
 @import url('./skeleton.css');
+@import url('./colors.css');
 
 body {
   margin: 0;
@@ -9,6 +10,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+i {
+  font-family: inherit;
 }
 
 code {

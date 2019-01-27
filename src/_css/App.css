@@ -1,32 +1,118 @@
+@import url('./index.css');
 .App {
   text-align: center;
+  position: relative;
+  height: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#navbar {
+  margin: 0;
+  padding: 1vh 5vw;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+#category-nav	{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: .3px black solid;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.navbar-left {
+  justify-content: space-between;
+}
+
+form#search-form {
+  margin: 0px 1vw;
+  display: flex;
+}
+
+form#search-form > input,
+form#search-form > button {
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px 5px;
+  height: 25px;
+  line-height: 0px;
+}
+
+form#search-form > input {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+form#search-form > button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.575);
   color: white;
+  transition: background .2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+form#search-form > button:hover {
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-right {
+  width: 40vw;
+  justify-content: space-between;
+}
+
+.navbar-left > a,
+.navbar-right > a {
+  text-decoration: none;
+  border-bottom: solid transparent 2px;
+  transition: all .4s ease;
+}
+
+.navbar-left > a:hover,
+.navbar-right > a:hover  {
+  border-color: black;
+  color: #EE5835;
+}
+
+.nav-active {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.category-link {
+  border-top: transparent solid 3px;
+  border-bottom: transparent solid 3px;
+  transition: all .5s ease;
+}
+
+.category-link:hover {
+  border-top: #EE5835 solid 3px;
+  border-bottom: #EE5835 solid 3px;
+}
+
+.removed {
+  visibility: hidden;
+}
+
+button:disabled {
+  opacity: 0.3;
+}
+
+#footer {
+  height: 10vh;
+  position: absolute;
+  bottom: 0px;
+  margin: 0px;
+  padding: 0 5vw;
+  border-top: black 1px solid;
+}
+
+#footer > p {
+  margin: 0px;
 }

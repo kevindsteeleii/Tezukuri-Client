@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from './containers/navbar';
 import Hero from './components/hero';
+// _BELOW: this is for test purposes only
+import GalleryCard from './components/galleryCard';
 import DemoLogin from './components/demoLogin';
 import SignFormBase from './components/signFormBase';
 import Footer from './components/footer';
@@ -14,6 +16,8 @@ class App extends Component {
       <div className="App">
         <Navbar location={location}/>
         <Hero/>
+        {/* _NOTE: Gallery Card is here for testing purposes only and should be removed and place in a container that generates based on the category of item */}
+        <GalleryCard title="Lorem Ipsum" mainPicture="cardMain.jpg" rating={1} price={1.22}/> 
         <Switch>
           <Route path='/login' render={() => <SignFormBase location={location}/>}/>
           <Route path='/signup' render={() => <SignFormBase location={location}/>}/>

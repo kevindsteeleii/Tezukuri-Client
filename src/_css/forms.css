@@ -1,10 +1,13 @@
+@import url('./index.css');
+
 #signForm {
   margin: 0 auto;
   width: 40vw;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   position: relative;
-  bottom: 50vh;
+  bottom: calc(var(--topbar-height) + var(--hero-landing-height));
 }
 
 button.submit {

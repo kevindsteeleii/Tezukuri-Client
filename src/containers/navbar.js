@@ -62,7 +62,7 @@ class Navbar extends Component{
         <NavLink id="cart" className="navy" to="/cart" onClick={this.shoppingCart}><i className="fas fa-shopping-cart"></i> Cart</NavLink>
       </div>
     </nav>
-    <CategoryNav categories={['jewelry', 'clothing', 'sculpture', 'vintage', 'commisions', 'other crafts']}/>
+    <CategoryNav categories={['jewelry-and-accessories', 'clothing-and-shoes', 'sculpture', 'vintage', 'commissions', 'other-crafts']}/>
     </>
     )
   }

@@ -1,13 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import Helper from '../helper';
 import '../_css/App.css';
 
 const generateCategoryLinks = (categories) => {
   return categories.map(category => 
     {
       return <NavLink className="category-link" key={`${category.toUpperCase()}`} to={`/products/${category}`}>
-        {category.charAt(0).toUpperCase()+category.substr(1)}
+        {Helper.deSlugify(category)}
       </NavLink>
     })
 }

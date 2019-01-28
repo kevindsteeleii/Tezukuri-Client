@@ -2,12 +2,13 @@
 .App {
   text-align: center;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #navbar {
   margin: 0;
   padding: 1vh 5vw;
+  max-height: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -105,14 +106,14 @@ button:disabled {
 }
 
 #footer {
+  width: 100vw;
   height: 10vh;
   position: absolute;
   bottom: 0px;
   margin: 0px;
-  padding: 0 5vw;
   border-top: black 1px solid;
 }
 
-#footer > p {
-  margin: 0px;
+#footer > * {
+  padding: 0 5vw;
 }

@@ -2,6 +2,13 @@
 @import url('./skeleton.css');
 @import url('./colors.css');
 
+:root {
+  --navbar-height: 40px;
+  --categorybar-height: 30px;
+  --hero-landing-height: 400px;
+  --topbar-height: calc(var(--navbar-height) + var(--categorybar-height));
+}
+
 body {
   margin: 0;
   padding: 0;

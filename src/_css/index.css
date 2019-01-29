@@ -6,7 +6,8 @@
   --navbar-height: 40px;
   --categorybar-height: 30px;
   --hero-landing-height: 400px;
-  --topbar-height: calc(var(--navbar-height) + var(--categorybar-height));
+  --footer-height: 100px;
+  --main-height: calc(100vh - var(--footer-height) - var(--navbar-height) - var());
 }
 
 body {

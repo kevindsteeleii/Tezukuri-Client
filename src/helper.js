@@ -21,6 +21,10 @@ const Helper = {
       }
     })
     return words.join(' ');
+  },
+
+  generateRandomString: (length) => {
+    Math.random().toString(36).substring(2, length + 2);
   }
 }
 
